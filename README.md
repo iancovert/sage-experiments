@@ -2,17 +2,19 @@
 
 This repository contains code for the experiments in [this paper](https://arxiv.org/abs/2004.00668). The code is frozen to use a specific implementation of SAGE, so if you want to use the current version please visit [this repository](https://github.com/iancovert/sage).
 
-If you find any problems here, please send me an email.
+Please send me an email if you find any problems here.
 
 # Replicating experiments
 
-1) Running this code requires a number of Python packages, in addition to the package for SAGE. You can install them all into your virtual environment with the following command:
+All of the datasets necessary to run our experiments are easily accessible except the breast cancer (BRCA) subtype classification dataset. Send me an email if you're interested in working with that data. To replicate the experiments described in the paper, follow these steps.
+
+1) Running this code requires a number of Python packages (XGBoost, Catboost, PyTorch, etc.) in addition to the package for SAGE. You can install them all into your virtual environment with the following command:
 
 ```bash
 pip install .
 ```
 
-Code for SAGE can be imported using the name `sage`.
+Code for SAGE can then be imported using the name `sage`.
 
 2) In the `experiments/` directory, run the `train models.ipynb` notebook to train and save models for all five datasets. 
 
